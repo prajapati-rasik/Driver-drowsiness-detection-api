@@ -1,3 +1,4 @@
+import os
 import cv2
 import numpy as np
 from keras.models import load_model
@@ -6,7 +7,8 @@ from keras.models import load_model
 def predict(l_eye, r_eye):
 
     # loading our model
-    model = load_model('./modell.h5')
+    model_path = os.path.abspath("./model_files/myModel.h5")
+    model = load_model(model_path)
     rpred = [99]  # for taking class prediction of right eye
     lpred = [99]  # for taking class prediction of left eye
 
