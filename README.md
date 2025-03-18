@@ -1,6 +1,4 @@
-# **Flask API**
-
-------------------
+# Flask API
 
 ## Deployment
 
